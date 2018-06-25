@@ -1,4 +1,4 @@
-﻿
+﻿var unitPriceTotal = 0;
 init();
 
 function init(){
@@ -24,8 +24,21 @@ function fillChart(eventObj){
 	var newElementPrice = document.createElement('div');
 	newElementPrice.innerText = unitPrice.innerText;
 	chartUnitPrice.appendChild(newElementPrice);
+	var unitPriceNumber = parseInt(unitPrice.innerText);
+	unitPriceTotal = unitPriceTotal + unitPriceNumber;
+	
+	var chartTotal = document.getElementById('chart_3');
+	var total = document.createElement('div');
+	total.innerText = unitPriceTotal;
+	chartTotal.innerText = '';
+	chartTotal.appendChild(total);
+	
+	
+	
+	
 }
 
+//alert(unitPriceTotal);
 
 
 window.onload=init;
