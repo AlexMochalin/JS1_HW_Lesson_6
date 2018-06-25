@@ -2,20 +2,38 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Задание 2</title>	
+		<title>Задание 2</title>
+		<link rel="stylesheet" href="style.css">	
 		<script src="code.js"></script>	
 	</head>
 	<body>
-		<div id='chart'>
+		<h2 class='title'>Корзина</h2>
+		<div id='chart' class='chart'>
 			<div id='chart_1'></div>
 			<div id='chart_2'></div>
 		</div>
-		<div id='goodsWrap'>
+		<div class="total">
+			<div class="total__text">ИТОГО:</div>
+			<div id='chart_3' class="total__amount"></div>
+		</div>
+		<div id='goodsWrap' class="wrap">
 			<div class='Unit'>
 				<img class='unit__img' id='unit_1_img' src='img/smallGallery/1.jpg'>
 				<div class='unit__name' id='unit_1_name'>Красная машина</div>
 				<div class='unit__price' id='unit_1_price'>1000</div>
 				<button class='unit__button' id='unit_1_button'>КУПИТЬ</button>
+			</div>
+			<div class='Unit'>
+				<img class='unit__img' id='unit_2_img' src='img/smallGallery/2.jpg'>
+				<div class='unit__name' id='unit_2_name'>Желтая машина</div>
+				<div class='unit__price' id='unit_2_price'>1500</div>
+				<button class='unit__button' id='unit_2_button'>КУПИТЬ</button>
+			</div>
+			<div class='Unit'>
+				<img class='unit__img' id='unit_3_img' src='img/smallGallery/3.jpg'>
+				<div class='unit__name' id='unit_3_name'>Синяя машина</div>
+				<div class='unit__price' id='unit_3_price'>2100</div>
+				<button class='unit__button' id='unit_3_button'>КУПИТЬ</button>
 			</div>
 		</div>
 	</body>
