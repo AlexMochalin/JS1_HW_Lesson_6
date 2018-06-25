@@ -4,11 +4,11 @@ init();
 function init(){
 	var buttons = document.getElementsByTagName('button');
 	for (var i = 0; i < buttons.length; i++){
-		buttons[i].onclick = changeBigPicture;
+		buttons[i].onclick = fillChart;
 	}
 }
 
-function changeBigPicture(eventObj){
+function fillChart(eventObj){
 	var chartUnitName = document.getElementById('chart_1');
 	var eventElement = eventObj.target; 
 	var goodIdArray = eventElement.id.split('_');
