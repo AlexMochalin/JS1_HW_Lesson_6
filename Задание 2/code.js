@@ -32,14 +32,7 @@ function fillChart(eventObj){
 	total.innerText = unitPriceTotal;
 	chartTotal.innerText = '';
 	chartTotal.appendChild(total);
-	
-	
-	
-	
 }
-
-//alert(unitPriceTotal);
-
 
 window.onload=init;
 
