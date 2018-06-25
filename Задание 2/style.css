@@ -1,0 +1,32 @@
+
+body {
+	width: 700px;
+	margin: 0 auto;
+}
+.title {
+	text-align: center;
+	font-size: 40px;
+	color: red;
+}
+.chart {
+	margin: 0 auto;
+	min-height: 80px;
+	display: flex;
+	justify-content: space-around;
+	/*flex-wrap: wrap;*/
+}
+.total {
+	margin: 0 auto;
+	min-height: 10px;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	/*flex-wrap: wrap;*/
+}
+.wrap{
+	margin: 0 auto;
+	width: 700px;
+	display: flex;
+	justify-content: space-around;
+	/*flex-wrap: wrap;*/
+}
