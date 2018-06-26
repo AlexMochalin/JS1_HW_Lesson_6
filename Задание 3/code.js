@@ -1,30 +1,40 @@
-﻿var i = 1;
-//init();
+var maxNameImage = 5;
+var minNameImage = 1;
 
-//function init(){
-	//var nextImg = document.getElementByIdName('nextImg');
-	//nextImg.onclick = nextImgFunc;
-//}
+var i = parseInt(Math.random()*(maxNameImage-minNameImage)+minNameImage);
 
 function init(){
-var nextImg = document.getElementById('nextImg');
-nextImg.onclick = function(){
+
+	cicle();
+
+	var nextImg = document.getElementById('nextImg');
+	nextImg.onclick = function(){
+			i++;
+			if (i > maxNameImage){
+				i = minNameImage;	
+			}
+			cicle();
+		}
+
+	var preImg = document.getElementById('previousImg');
+	preImg.onclick = function(){
+			i--;
+			if (i < minNameImage){
+				i = maxNameImage;	
+			}
+			cicle();
+		}
+}
+
+function cicle(){
+	var img = document.getElementById('img');
+	img.innerHTML = '';
 	var image = document.getElementById('img');
 	var newImage = document.createElement('img');
 	var src = 'img/bigGallery/' + i + '.jpg'; 
-	//newImage.innerHTML = imagesArray[i];
-	newImage.src = ' ';
-	image.appendChild(newImage);
 	newImage.src = src;
-	image.appendChild(newImage);
-	i++;
-
-	}
+	image.appendChild(newImage);	
 }
-
-
-
-
 
 window.onload=init;
 
